@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window = UIWindow(frame: UIScreen.main.bounds)
     let router = RootScreenRouter()
     router.window = window
-    router.showScreen(.tabbar)
+    router.showScreen(.login)
     self.router = router
     window?.makeKeyAndVisible()
     return true

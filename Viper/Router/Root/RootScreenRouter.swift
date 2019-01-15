@@ -13,6 +13,7 @@ final class RootScreenRouter: ScreenRouter {
 
   enum Screen: String {
     case tabbar = "Tabbar"
+    case login = "Login"
   }
 
   weak var window: UIWindow? {
@@ -28,6 +29,9 @@ final class RootScreenRouter: ScreenRouter {
     case .tabbar:
       let target = tabbarController()
       window?.rootViewController = target
+    case .login:
+      let login = loginController()
+      window?.rootViewController = login
     }
   }
 
@@ -41,6 +45,21 @@ final class RootScreenRouter: ScreenRouter {
     router.configDefaultTabbarController()
 
     return tabbarController
+  }
+
+  private func loginController() -> LoginViewController {
+    let vc = LoginViewController()
+    let presenter = LoginPresenter()
+    vc.eventHandler = presenter
+    let router = LoginScreenRouter()
+    router.viewController = vc
+    let entity = LoginLocalEntity()
+    let interactor = LoginInteractor()
+    interactor.entity = entity
+    presenter.view = vc
+    presenter.router = router
+    presenter.interactor = interactor
+    return vc
   }
 
 }
