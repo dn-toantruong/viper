@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C6003DBF8D87112ABCE76F6 /* Pods_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3F1F7CE7D52606C559E8F7 /* Pods_Viper.framework */; };
+		4F34FC2121F188DB002591B9 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F34FC1F21F188DB002591B9 /* CategoriesCell.swift */; };
+		4F34FC2221F188DB002591B9 /* CategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F34FC2021F188DB002591B9 /* CategoriesCell.xib */; };
 		4FF1304421E84EBE00D1EA87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1304221E84EBE00D1EA87 /* LoginViewController.swift */; };
 		4FF1304721E8573000D1EA87 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF1304621E8573000D1EA87 /* LoginViewController.xib */; };
 		4FF1304A21E887D800D1EA87 /* LoginScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1304921E887D800D1EA87 /* LoginScreenRouter.swift */; };
@@ -18,6 +20,17 @@
 		4FF1305521EC7CF000D1EA87 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1305421EC7CF000D1EA87 /* StringExt.swift */; };
 		4FF1305921EDCA2200D1EA87 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1305721EDCA2200D1EA87 /* CategoriesViewController.swift */; };
 		4FF1305A21EDCA2200D1EA87 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF1305821EDCA2200D1EA87 /* CategoriesViewController.xib */; };
+		4FF1305C21EDD81B00D1EA87 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1305B21EDD81B00D1EA87 /* CategoriesView.swift */; };
+		4FF1305F21EDD84900D1EA87 /* CategoriesScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1305E21EDD84900D1EA87 /* CategoriesScreenRouter.swift */; };
+		4FF1306121EDD86700D1EA87 /* CategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1306021EDD86700D1EA87 /* CategoriesPresenter.swift */; };
+		4FF1306321EDD88000D1EA87 /* CategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1306221EDD88000D1EA87 /* CategoriesInteractor.swift */; };
+		4FF1306521EDDFE800D1EA87 /* HttpCategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1306421EDDFE800D1EA87 /* HttpCategoriesService.swift */; };
+		4FF1306721EDE10F00D1EA87 /* CategoriesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1306621EDE10F00D1EA87 /* CategoriesEntity.swift */; };
+		4FF1306921EDE14100D1EA87 /* ItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1306821EDE14100D1EA87 /* ItemEntity.swift */; };
+		4FF1306B21EDE19100D1EA87 /* PageInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1306A21EDE19100D1EA87 /* PageInfoEntity.swift */; };
+		4FF1306D21EDE1F000D1EA87 /* SnippetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1306C21EDE1F000D1EA87 /* SnippetEntity.swift */; };
+		4FF1306F21EDE24E00D1EA87 /* ThumbnailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1306E21EDE24E00D1EA87 /* ThumbnailsEntity.swift */; };
+		4FF1307121EEF03D00D1EA87 /* HttpCategoriesServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF1307021EEF03D00D1EA87 /* HttpCategoriesServiceRouter.swift */; };
 		511C1B01216F3A8700BDFB72 /* ScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511C1B00216F3A8700BDFB72 /* ScaleFactor.swift */; };
 		511DC754216C848400FB96CB /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 511DC750216C848400FB96CB /* Localized.strings */; };
 		511DC755216C848400FB96CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511DC753216C848400FB96CB /* Assets.xcassets */; };
@@ -94,6 +107,8 @@
 		393C622EDCB845930F6FB144 /* Pods-ViperTests.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperTests.release-prod.xcconfig"; path = "Pods/Target Support Files/Pods-ViperTests/Pods-ViperTests.release-prod.xcconfig"; sourceTree = "<group>"; };
 		3E5151E86CA4814682928A35 /* Pods_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBE94ECCA7F16823FD24F23 /* Pods-ViperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperTests/Pods-ViperTests.release.xcconfig"; sourceTree = "<group>"; };
+		4F34FC1F21F188DB002591B9 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		4F34FC2021F188DB002591B9 /* CategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCell.xib; sourceTree = "<group>"; };
 		4FF1304221E84EBE00D1EA87 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4FF1304621E8573000D1EA87 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4FF1304921E887D800D1EA87 /* LoginScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenRouter.swift; sourceTree = "<group>"; };
@@ -104,6 +119,17 @@
 		4FF1305421EC7CF000D1EA87 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		4FF1305721EDCA2200D1EA87 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		4FF1305821EDCA2200D1EA87 /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
+		4FF1305B21EDD81B00D1EA87 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		4FF1305E21EDD84900D1EA87 /* CategoriesScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScreenRouter.swift; sourceTree = "<group>"; };
+		4FF1306021EDD86700D1EA87 /* CategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesPresenter.swift; sourceTree = "<group>"; };
+		4FF1306221EDD88000D1EA87 /* CategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesInteractor.swift; sourceTree = "<group>"; };
+		4FF1306421EDDFE800D1EA87 /* HttpCategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCategoriesService.swift; sourceTree = "<group>"; };
+		4FF1306621EDE10F00D1EA87 /* CategoriesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesEntity.swift; sourceTree = "<group>"; };
+		4FF1306821EDE14100D1EA87 /* ItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEntity.swift; sourceTree = "<group>"; };
+		4FF1306A21EDE19100D1EA87 /* PageInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfoEntity.swift; sourceTree = "<group>"; };
+		4FF1306C21EDE1F000D1EA87 /* SnippetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetEntity.swift; sourceTree = "<group>"; };
+		4FF1306E21EDE24E00D1EA87 /* ThumbnailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailsEntity.swift; sourceTree = "<group>"; };
+		4FF1307021EEF03D00D1EA87 /* HttpCategoriesServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCategoriesServiceRouter.swift; sourceTree = "<group>"; };
 		511C1B00216F3A8700BDFB72 /* ScaleFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleFactor.swift; sourceTree = "<group>"; };
 		511DC751216C848400FB96CB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localized.strings; sourceTree = "<group>"; };
 		511DC753216C848400FB96CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +226,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F34FC1E21F188BC002591B9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F34FC1F21F188DB002591B9 /* CategoriesCell.swift */,
+				4F34FC2021F188DB002591B9 /* CategoriesCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		4FF1304121E84E9900D1EA87 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,8 +264,18 @@
 		4FF1305621EDCA0000D1EA87 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				4F34FC1E21F188BC002591B9 /* Cell */,
 				4FF1305721EDCA2200D1EA87 /* CategoriesViewController.swift */,
 				4FF1305821EDCA2200D1EA87 /* CategoriesViewController.xib */,
+				4FF1305B21EDD81B00D1EA87 /* CategoriesView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4FF1305D21EDD82300D1EA87 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4FF1305E21EDD84900D1EA87 /* CategoriesScreenRouter.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -379,6 +424,7 @@
 				51EF0B4C216DEE9F003B8206 /* AccountComparePresenter.swift */,
 				51EF0B4E216DEEB4003B8206 /* PerformancePresenter.swift */,
 				4FF1304B21E8880E00D1EA87 /* LoginPresenter.swift */,
+				4FF1306021EDD86700D1EA87 /* CategoriesPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -412,6 +458,8 @@
 				EA4BC7192161BADD009646ED /* HttpServiceRouter.swift */,
 				EA4BC715216080A5009646ED /* HttpQuoteService.swift */,
 				EA4BC7172161BA98009646ED /* HttpQuoteServiceRouter.swift */,
+				4FF1306421EDDFE800D1EA87 /* HttpCategoriesService.swift */,
+				4FF1307021EEF03D00D1EA87 /* HttpCategoriesServiceRouter.swift */,
 			);
 			path = HTTP;
 			sourceTree = "<group>";
@@ -419,6 +467,7 @@
 		EA6D91D7215C96A000DB4B79 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				4FF1305D21EDD82300D1EA87 /* Categories */,
 				4FF1304821E887B900D1EA87 /* Login */,
 				51EF0B49216DEDBA003B8206 /* Performance */,
 				51EF0B46216DED7A003B8206 /* AccountCompare */,
@@ -473,6 +522,7 @@
 				EA4E7313215DE613001AF19F /* QuoteInteractor.swift */,
 				B3452BDC216EDD9A00BC5CCF /* ProfitInteracror.swift */,
 				4FF1305121EC7B2400D1EA87 /* LoginInteractor.swift */,
+				4FF1306221EDD88000D1EA87 /* CategoriesInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -501,6 +551,11 @@
 			children = (
 				EA4E7309215D4AA9001AF19F /* QuoteEntity.swift */,
 				4FF1304F21EC782300D1EA87 /* User.swift */,
+				4FF1306621EDE10F00D1EA87 /* CategoriesEntity.swift */,
+				4FF1306821EDE14100D1EA87 /* ItemEntity.swift */,
+				4FF1306A21EDE19100D1EA87 /* PageInfoEntity.swift */,
+				4FF1306C21EDE1F000D1EA87 /* SnippetEntity.swift */,
+				4FF1306E21EDE24E00D1EA87 /* ThumbnailsEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -730,6 +785,7 @@
 				51F32B61216C614400471C03 /* AccountCompareViewController.xib in Resources */,
 				EAB1BE792162DE5600A7CD3F /* SettingsViewController.xib in Resources */,
 				B3418C9B21781B3200788765 /* TradeView.xib in Resources */,
+				4F34FC2221F188DB002591B9 /* CategoriesCell.xib in Resources */,
 				4FF1305A21EDCA2200D1EA87 /* CategoriesViewController.xib in Resources */,
 				EA4BC71021606BF9009646ED /* DemoTradeViewController.xib in Resources */,
 				EA4E72EC215CBBBB001AF19F /* LaunchScreen.storyboard in Resources */,
@@ -900,16 +956,20 @@
 				EA18868F216A48DC00AA4657 /* QuoteGraphView.swift in Sources */,
 				51EF0B53216DEF1C003B8206 /* PerformanceView.swift in Sources */,
 				51EF0B4B216DEDCF003B8206 /* PerformanceScreenRouter.swift in Sources */,
+				4F34FC2121F188DB002591B9 /* CategoriesCell.swift in Sources */,
 				EA6D91EC215C96A000DB4B79 /* AppDelegate.swift in Sources */,
 				51F3050E217580AB008C2CBA /* R.generated.swift in Sources */,
+				4FF1306F21EDE24E00D1EA87 /* ThumbnailsEntity.swift in Sources */,
 				EAB1BE6D2162B6A900A7CD3F /* RootScreenRouter.swift in Sources */,
 				51F32B54216C4FB900471C03 /* TabbarController.swift in Sources */,
 				EA4E7310215DE4F6001AF19F /* QuotesRepository.swift in Sources */,
+				4FF1305C21EDD81B00D1EA87 /* CategoriesView.swift in Sources */,
 				51F32B5C216C5EBE00471C03 /* NavigationController.swift in Sources */,
 				EA4E7302215D3E9A001AF19F /* WsQuoteService.swift in Sources */,
 				4FF1305521EC7CF000D1EA87 /* StringExt.swift in Sources */,
 				EAB1BE7B2162DE9300A7CD3F /* SettingsView.swift in Sources */,
 				B3418C9C21781B3200788765 /* TradeView.swift in Sources */,
+				4FF1307121EEF03D00D1EA87 /* HttpCategoriesServiceRouter.swift in Sources */,
 				4FF1304A21E887D800D1EA87 /* LoginScreenRouter.swift in Sources */,
 				EAB1BE782162DE5600A7CD3F /* SettingsViewController.swift in Sources */,
 				EAABA24A217495250025E50B /* HighlightLabel.swift in Sources */,
@@ -920,6 +980,8 @@
 				EA4E730A215D4AA9001AF19F /* QuoteEntity.swift in Sources */,
 				EA4BC70D215F723F009646ED /* DemoTradePresenter.swift in Sources */,
 				EA18869D216A7C7300AA4657 /* SocketInteractor.swift in Sources */,
+				4FF1306521EDDFE800D1EA87 /* HttpCategoriesService.swift in Sources */,
+				4FF1306121EDD86700D1EA87 /* CategoriesPresenter.swift in Sources */,
 				B3452BE1216EE07900BC5CCF /* ProfitRepository.swift in Sources */,
 				4FF1304C21E8880E00D1EA87 /* LoginPresenter.swift in Sources */,
 				EAB1BE722162B7E400A7CD3F /* DemoTradeScreenRouter.swift in Sources */,
@@ -930,6 +992,7 @@
 				EA4E7308215D4143001AF19F /* SocketClient.swift in Sources */,
 				EA11967F2175BF4000CE75AF /* Config.swift in Sources */,
 				EAABA24E217495560025E50B /* SettlementView.swift in Sources */,
+				4FF1306721EDE10F00D1EA87 /* CategoriesEntity.swift in Sources */,
 				511C1B01216F3A8700BDFB72 /* ScaleFactor.swift in Sources */,
 				EA4BC7182161BA98009646ED /* HttpQuoteServiceRouter.swift in Sources */,
 				EAB1BE742162DAAB00A7CD3F /* RequestHandler.swift in Sources */,
@@ -940,17 +1003,22 @@
 				51EF0B4F216DEEB4003B8206 /* PerformancePresenter.swift in Sources */,
 				4FF1304E21EC33F800D1EA87 /* LoginView.swift in Sources */,
 				EA6D91E9215C96A000DB4B79 /* DemoTradeViewController.swift in Sources */,
+				4FF1306921EDE14100D1EA87 /* ItemEntity.swift in Sources */,
 				51EF0B45216DE894003B8206 /* TabbarScreenRouter.swift in Sources */,
 				4FF1305021EC782300D1EA87 /* User.swift in Sources */,
+				4FF1305F21EDD84900D1EA87 /* CategoriesScreenRouter.swift in Sources */,
 				EA18869B216A668B00AA4657 /* WsServiceRouter.swift in Sources */,
 				EA4BC71A2161BADD009646ED /* HttpServiceRouter.swift in Sources */,
 				4FF1304421E84EBE00D1EA87 /* LoginViewController.swift in Sources */,
 				51EF0B4D216DEE9F003B8206 /* AccountComparePresenter.swift in Sources */,
+				4FF1306B21EDE19100D1EA87 /* PageInfoEntity.swift in Sources */,
 				EA4E7314215DE613001AF19F /* QuoteInteractor.swift in Sources */,
 				EAB1BE7D2162DEE000A7CD3F /* SettingsPresenter.swift in Sources */,
+				4FF1306321EDD88000D1EA87 /* CategoriesInteractor.swift in Sources */,
 				B3452BDD216EDD9A00BC5CCF /* ProfitInteracror.swift in Sources */,
 				51F32B65216C616C00471C03 /* PerformanceViewController.swift in Sources */,
 				EA1196822175C57700CE75AF /* NSLayoutConstraint+ScaleFactor.swift in Sources */,
+				4FF1306D21EDE1F000D1EA87 /* SnippetEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

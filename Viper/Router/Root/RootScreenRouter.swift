@@ -30,8 +30,9 @@ final class RootScreenRouter: ScreenRouter {
       let target = tabbarController()
       window?.rootViewController = target
     case .login:
-      let login = loginController()
-      window?.rootViewController = login
+        let login = loginController()
+        let navi = NavigationController(rootViewController: login)
+        window?.rootViewController = navi
     }
   }
 

@@ -20,7 +20,24 @@ final class LoginScreenRouter: ScreenRouter {
         switch screen {
         case .menu:
             print("Show screen moi ne!ß")
-            break
+            let vc = categoriesViewController()
+            viewController?.navigationController?.pushViewController(vc, animated: true)
         }
+    }
+
+    private func categoriesViewController() -> CategoriesViewController {
+        let vc = CategoriesViewController()
+        let presenter = CategoriesPresenter()
+        vc.eventHandler = presenter
+        let router = CategoriesScreenRouter()
+        router.viewController = vc
+        let entity = CategoriesEntity()
+        let interactor = CategoriesInteractor()
+        interactor.categoriesEntity = entity
+        interactor.http = HttpCategoriesService()
+        presenter.view = vc
+        presenter.router = router
+        presenter.interactor = interactor
+        return vc
     }
 }
